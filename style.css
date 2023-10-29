@@ -50,6 +50,9 @@ body{
 #spooky #body:before{
     left:-18px;
 }
+#spooky #body:after{
+    right:-18px;
+}
 #spooky #body #eyes{
     display:flex;
     justify-content:space-between;
@@ -100,5 +103,26 @@ body{
     border-radius:50%;
 }
 #shadow{
-    
+    margin:-90px auto 0;
+    background:252c49;
+    width:180px;
+    height:40px;
+    border-radius:50%;
+    animation:zoomy 2s infinite;
+}
+@keyframes floaty{
+    0%, 100% {
+        transform:translateY(0);
+    }
+    50% {
+        transform:translateY(-20px);
+    }
+}
+@keyframes zoomy{
+    0%, 100% {
+        transform:scale(1);
+    }
+    50%{
+        transform:scale (0.8);
+    }
 }
